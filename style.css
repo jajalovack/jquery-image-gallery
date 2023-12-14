@@ -1,0 +1,70 @@
+*
+{
+    font-family: 'Rubik', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.thumbnails
+{
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thumbnails > .imgContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.thumbnails > .imgContainer > img
+{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    transition: 0.10s;
+    cursor: pointer;
+}
+
+.thumbnails > .imgContainer > img:hover
+{
+    width: 190px;
+    height: 190px;
+}
+
+.largeView
+{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #00000088;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.largeView img
+{
+    background-color: white;
+}
+
+.largeViewShow
+{
+    display: flex;
+}
